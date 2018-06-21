@@ -4,8 +4,16 @@
 
 // TODO: Create a "CartItem" constructor (named CartItem) that has item and quantity
 // properties, and builds an array of items as you create instances
+var CartItem = function(item,quantity) {
+  this.item = item;
+  this.quantityNumber = quantity || 0;
+  CartItem.allCartItems.push(this);
+
+}
 
 
+
+CartItem.allCartItems = [];
 
 // Product Contructor
 var Product = function(filePath, name) {
@@ -14,6 +22,7 @@ var Product = function(filePath, name) {
   Product.allProducts.push(this);
 };
 Product.allProducts = [];
+
 
 function generateCatalog() {
   new Product('assets/bag.jpg', 'Bag');
