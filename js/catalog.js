@@ -52,9 +52,19 @@ function saveCartToLocalStorage() {
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+
+function updateCounter() {
+  var sum = 0;
   var cartCount = document.getElementById('itemCount');
-  var countContent
+  for (var i = 0; i < CartItem.allCartItems.length; i++){
+    sum += CartItem.allCartItems[i].quantity;
+  }
+  console.log(CartItem.allCartItems);
+
+
+  var countContent = sum;
+  cartCount.textContent = countContent;
+}
   
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
