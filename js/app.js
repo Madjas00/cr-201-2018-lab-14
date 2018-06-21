@@ -6,7 +6,7 @@
 // properties, and builds an array of items as you create instances
 var CartItem = function(item,quantity) {
   this.item = item;
-  this.quantityNumber = quantity || 0;
+  this.quantity = quantity || 0;
   CartItem.allCartItems.push(this);
 
 }

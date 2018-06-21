@@ -1,4 +1,4 @@
-/* global Product, Cart */
+/* global Product, CartItem */
 
 'use strict';
 
@@ -25,6 +25,7 @@ function populateForm() {
 function handleSubmit(event) {
 
   // TODO: Prevent the page from reloading
+  event.preventDefault();
 
   // Do all the things ...
   addSelectedItemToCart();
@@ -36,6 +37,9 @@ function handleSubmit(event) {
 
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
+  var items = document.getElementById('items');
+  var quantity = document.getElementById('quantity');
+  new CartItem(items.value, parseInt(quantity.value));
   // TODO: suss out the item picked from the select list
   // TODO: get the quantity
   // TODO: using those, create a new Cart item instance
