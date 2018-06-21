@@ -3,6 +3,7 @@
 nav {
   float: right;
   margin-right:10%;
+  margin-top: -22px;
 }
 
 nav li {
@@ -14,16 +15,17 @@ h1 {
   font-family: 'Titan One', cursive;
   font-size: 2em;
   color: #9E2A2B;
-  font-
-}
-
-main div header h1 {
-  background-color: #FFF8F0;
+  padding-top: 10px;
 }
 
 header {
   background-color: #FFCF99;
   height: 55px;
+  text-align: center;
+}
+
+section header {
+  background-color: #FFF8F0;
 }
 
 body {
