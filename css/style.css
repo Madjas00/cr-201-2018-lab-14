@@ -28,9 +28,27 @@ section header {
   background-color: #FFF8F0;
 }
 
+section {
+  text-align: center;
+}
+
 body {
   font-family: 'Didact Gothic', sans-serif;
   background-color: #FFF8F0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1E1E24;
+  
+}
+
+footer p {
+  text-align: center;
+  color: white;
 }
 /* raisin black: #1E1E24
     floral white: #FFF8F0
